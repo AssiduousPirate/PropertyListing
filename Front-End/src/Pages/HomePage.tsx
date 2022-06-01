@@ -10,6 +10,14 @@ class HomePage extends React.Component<any, any>
                 <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Listings"}>Listings Page</Link>
                 <br />
                 <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Register"}>Register Page</Link>
+                <br />
+                <br />
+                <br />
+                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/ThankYou"}>Thank you Page</Link>
+                <br />
+                <br />
+                <br />
+                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Error"}>Error Page</Link>
             </div>
         )
     }

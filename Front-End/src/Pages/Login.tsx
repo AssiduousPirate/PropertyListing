@@ -2,6 +2,24 @@ import * as React from "react"
 import { Link } from "react-router-dom"
 class Login extends React.Component<any, any>
 {
+    constructor(props: any){
+        super(props)
+        this.state = {
+            email: "",
+            password: ""
+        }
+    }
+    handleChange(event: any){
+        const name = event.target.name
+        const value = event.target.value
+        this.setState({
+            [name]: value
+        })
+    }
+    handleSubmit(event: any){
+        event.preventDefault()
+
+    }
     render(): React.ReactNode 
     {
         return(
