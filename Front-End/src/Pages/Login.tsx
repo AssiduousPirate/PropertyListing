@@ -1,13 +1,18 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+let API_URL = "http://localhost:8080/api/auth/login"
 class Login extends React.Component<any, any>
 {
     constructor(props: any){
         super(props)
         this.state = {
             email: "",
-            password: ""
+            password: "",
+            message: "",
+            successfully: false
         }
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
     handleChange(event: any){
         const name = event.target.name
@@ -18,6 +23,55 @@ class Login extends React.Component<any, any>
     }
     handleSubmit(event: any){
         event.preventDefault()
+        if(this.state.email === " " && this.state.email === null){
+            this.setState({
+                message: "Email is Required",
+                successfully: false
+            })
+        }
+        if(this.state.password === " " && this.state.password === null){
+            this.setState({
+                message: "Password is Required",
+                successfully: false
+            })
+        }
+        const body = {
+            email: this.state.email,
+            password: this.state.password
+        }
+        console.log(body)
+        const requestOptions = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify(body),
+        }
+        fetch(API_URL, requestOptions)
+            .then((response) => {
+                return response.json()
+            })
+            .then((results) => {
+                if(results){
+                    this.setState({
+                        message: "Login Successfully",
+                        successfully: true
+                    })
+                    this.setState({
+                        email: "",
+                        password: ""
+                    })
+                }
+                window.location.reload()
+            })
+            .catch((error) => {
+                console.log("There are some error" + ": " + error)
+                this.setState({
+                    message: "There are some error" + ": " + error,
+                    successfully: false
+                })
+            })
 
     }
     render(): React.ReactNode 
@@ -34,12 +88,19 @@ class Login extends React.Component<any, any>
                                             <h2 className={"text-2xl font-semibold text-[#adadad]"}>Login Here</h2>
                                         </div>
                                     </div>
-                                    <form>
+                                    {this.state.message && (
+                                        <div className={this.state.successfully ? 
+                                            "bg-green-200 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" : 
+                                            "bg-red-200 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3"} role="alert">
+                                            {this.state.message}
+                                        </div>
+                                    )}
+                                    <form onSubmit={this.handleSubmit} method="POST">
                                         <div className="mb-6">
-                                            <input type="email" placeholder="Email" className="w-full rounded-md border border-[#E9EDF4] py-3 px-5 bg-[#FCFDFE] text-base text-body-color placeholder-[#ACB6BE] outline-none focus-visible:shadow-none focus:border-blue-500 " />
+                                            <input type="email" name="email" onChange={this.handleChange} placeholder="Email" className="w-full rounded-md border border-[#E9EDF4] py-3 px-5 bg-[#FCFDFE] text-base text-body-color placeholder-[#ACB6BE] outline-none focus-visible:shadow-none focus:border-blue-500 " />
                                         </div>
                                         <div className="mb-6">
-                                            <input type="password" placeholder="Password" className="w-full rounded-md border border-[#E9EDF4] py-3 px-5 bg-[#FCFDFE] text-base text-body-color placeholder-[#ACB6BE] outline-none focus-visible:shadow-none focus:border-blue-500 " />
+                                            <input type="password" name="password" onChange={this.handleChange} placeholder="Password" className="w-full rounded-md border border-[#E9EDF4] py-3 px-5 bg-[#FCFDFE] text-base text-body-color placeholder-[#ACB6BE] outline-none focus-visible:shadow-none focus:border-blue-500 " />
                                         </div>
                                         <div className="mb-10">
                                             <input type="submit" value="Sign In" className="w-full rounded-md border border-blue-500 py-3 px- bg-blue-500 text-base text-white cursor-pointer hover:bg-opacity-90 transition" />

@@ -9,7 +9,9 @@ class Register extends React.Component<any, any>
             name: "",
             email: "",
             password: "",
-            repassword: ""
+            repassword: "",
+            message: "",
+            successfully: false
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -24,22 +26,34 @@ class Register extends React.Component<any, any>
     handleSubmit(event: any){
         event.preventDefault()
         if(this.state.name === " " && this.state.name === null){
-            alert("Name is important")
+            this.setState({
+                message: "Name is Required",
+                successfully: false
+            })
             this.props.history.push("/Register")
             window.location.reload()
         }
         if(this.state.email === " " && this.state.email === null){
-            alert("Email is important")
+            this.setState({
+                message: "Email is Required",
+                successfully: false
+            })
             this.props.history.push("/Register")
             window.location.reload()
         }
         if(this.state.password === " " && this.state.password === null){
-            alert("Password is important")
+            this.setState({
+                message: "Password is Required",
+                successfully: false
+            })
             this.props.history.push("/Register")
             window.location.reload()
         }
         if(this.state.password !== this.state.repassword){
-            alert("Password doesn't matches")
+            this.setState({
+                message: "Password doesn't matches",
+                successfully: false
+            })
             this.props.history.push("/Register")
             window.location.reload()
         }
@@ -63,7 +77,10 @@ class Register extends React.Component<any, any>
             })
             .then((results) => {
                 if(results){
-                    alert("registered Successfully")
+                    this.setState({
+                        message: "Registred Successfully",
+                        successfully: true
+                    })
                     this.setState({
                         name: "",
                         email: "",
@@ -74,8 +91,11 @@ class Register extends React.Component<any, any>
                 } 
             })
             .catch((error) => {
-                alert("There is some Error" + error)
-                console.log("There is some Error" + error)
+                alert("There is some Error" + ": " + error)
+                this.setState({
+                    message: "There are some error" + ": " + error,
+                    successfully: false
+                })
             })
     }
     render(): React.ReactNode 
@@ -92,6 +112,13 @@ class Register extends React.Component<any, any>
                                             <h2 className={"text-2xl font-semibold text-[#adadad]"}>Register Here!</h2>
                                         </div>
                                     </div>
+                                    {this.state.message && (
+                                        <div className={this.state.successfully ? 
+                                            "bg-green-200 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" : 
+                                            "bg-red-200 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3"} role="alert">
+                                            {this.state.message}
+                                        </div>
+                                    )}
                                     <form onSubmit={this.handleSubmit} method={"POST"}>
                                         <div className="mb-6">
                                             <input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} className="w-full rounded-md border border-[#E9EDF4] py-3 px-5 bg-[#FCFDFE] text-base text-body-color placeholder-[#ACB6BE] outline-none focus-visible:shadow-none focus:border-blue-500 " />
