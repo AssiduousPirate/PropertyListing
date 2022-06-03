@@ -1,5 +1,5 @@
-require("./app/models/db")
-require("./app/routes/app")(app)
+require("./app/models/config")
+require("./app/routes/app")
 const PORT = process.env.PORT || 8080
 const express = require("express")
 const cors = require("cors")

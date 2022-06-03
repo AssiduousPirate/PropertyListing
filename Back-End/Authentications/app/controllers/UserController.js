@@ -2,7 +2,7 @@ const db = require("../models/db")
 const config = require("../config/auth.config")
 const Users = db.Users
 var jwt = require("jsonwebtoken")
-var bcrypt = require("bcrypt")
+var bcrypt = require("bcryptjs")
 exports.signup = (req, res) => {
     Users.create({
         name: req.body.name,
