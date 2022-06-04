@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-let API_URL = "http://localhost:8080/api/auth/login"
+let API_URL = "http://localhost:8080/api/auth/signin"
 class Login extends React.Component<any, any>
 {
     constructor(props: any){
@@ -78,7 +78,7 @@ class Login extends React.Component<any, any>
     {
         return(
             <div>
-                <section className="bg-[#F4F7FF] py-20 lg:py-[120px]">
+                <section className="bg-[#F4F7FF] pl-12">
                     <div className="container">
                         <div className="flex flex-wrap -mx-4">
                             <div className="w-full px-4">
@@ -106,7 +106,7 @@ class Login extends React.Component<any, any>
                                             <input type="submit" value="Sign In" className="w-full rounded-md border border-blue-500 py-3 px- bg-blue-500 text-base text-white cursor-pointer hover:bg-opacity-90 transition" />
                                         </div>
                                     </form>
-                                    <p className="text-base mb-6 text-[#adadad]">Connect With</p>
+                                    {/* <p className="text-base mb-6 text-[#adadad]">Connect With</p>
                                     <ul className="flex justify-between -mx-2 mb-12">
                                         <li className="px-2 w-full">
                                             <a href="javascript:void(0)" className="flex h-11 items-center justify-center rounded-md bg-[#4064AC] hover:bg-opacity-90">
@@ -129,7 +129,7 @@ class Login extends React.Component<any, any>
                                                 </svg>
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                     <Link to={"/PasswordEmail"} className="text-base inline-block mb-2 text-[#adadad] hover:underline hover:text-blue-500">Forget Password?</Link>
                                     <p className="text-base text-[#adadad]">Not a member?
                                         <Link to={"/Register"} className="text-blue-500 hover:underline">Sign Up</Link>

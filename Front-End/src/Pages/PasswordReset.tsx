@@ -74,7 +74,7 @@ class PasswordReset extends React.Component<any, any>
     {
         return(
             <div>
-                <section className="bg-[#F4F7FF] py-20 lg:py-[120px]">
+                <section className="bg-[#F4F7FF] pl-12">
                     <div className="container">
                         <div className="flex flex-wrap -mx-4">
                             <div className="w-full px-4">
