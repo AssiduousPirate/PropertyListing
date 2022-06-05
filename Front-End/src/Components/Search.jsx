@@ -1,7 +1,8 @@
 import * as React from "react"
-class Search extends React.Component<any, any>
+class Search extends React.Component
 {
-    render(): React.ReactNode {
+    render()
+    {
         return(
             <div>
                 <div className="box-collapse">

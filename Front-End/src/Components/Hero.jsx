@@ -3,9 +3,10 @@ import { Link } from "react-router-dom"
 import slider1 from "../Assets/img/slide-1"
 import slider2 from "../Assets/img/slide-2"
 import slider3 from "../Assets/img/slide-3"
-class Hero extends React.Component<any, any>
+class Hero extends React.Component
 {
-    render(): React.ReactNode {
+    render()
+    {
         const myStyle1 = {
             backgroundImage: slider1
         }

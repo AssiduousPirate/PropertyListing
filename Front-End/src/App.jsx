@@ -12,7 +12,7 @@ import ThankYou from './Pages/ThankYou';
 import ProfilePage from './Pages/ProfilePage';
 import ProfileUpdate from './Pages/ProfileUpdate';
 import ErrorPage from './Pages/Error';
-export default class App extends React.Component<any, any>
+export default class App extends React.Component
 {
     render(){
         return(

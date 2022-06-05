@@ -1,8 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-class NavPage extends React.Component<any, any>
+class NavPage extends React.Component
 {
-    render(): React.ReactNode {
+    render()
+    {
         return(
             <div>
                 <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">

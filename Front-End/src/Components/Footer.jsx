@@ -1,8 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-class Footer extends React.Component<any, any>
+class Footer extends React.Component
 {
-    render(): React.ReactNode {
+    render()
+    {
         return(
             <div>
                 <section className="section-footer">

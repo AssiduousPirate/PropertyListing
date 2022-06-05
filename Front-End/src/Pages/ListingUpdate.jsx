@@ -1,7 +1,7 @@
 import * as React from "react"
-class ListingUpdate extends React.Component<any, any>
+class ListingUpdate extends React.Component
 {
-    render(): React.ReactNode 
+    render()
     {
         return(
             <h1 className={"text-center pt-20 text-medium text-red-300"}>ListingUpdate Page</h1>

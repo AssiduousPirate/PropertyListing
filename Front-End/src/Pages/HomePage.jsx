@@ -5,9 +5,9 @@ import Hero from "../Components/Hero"
 import LatestHome from "../Components/LatestHome"
 import NavPage from "../Components/Nav"
 import Search from "../Components/Search"
-class HomePage extends React.Component<any, any>
+class HomePage extends React.Component
 {
-    render(): React.ReactNode 
+    render() 
     {
         return(
             <div>

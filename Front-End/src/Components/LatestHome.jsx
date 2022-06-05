@@ -1,7 +1,13 @@
 import * as React from "react"
-class LatestHome extends React.Component<any, any>
+import { Link } from "react-router-dom"
+import Property6 from "../Assets/img/property-6"
+import Property3 from "../Assets/img/property-3"
+import Property7 from "../Assets/img/property-7"
+import Property10 from "../Assets/img/property-10"
+class LatestHome extends React.Component
 {
-    render(): React.ReactNode {
+    render()
+    {
         return(
             <div>
                 <section className="section-property section-t8">
@@ -13,9 +19,9 @@ class LatestHome extends React.Component<any, any>
                                         <h2 className="title-a">Latest Properties</h2>
                                     </div>
                                     <div className="title-link">
-                                        <a href="property-grid.html">All Property
+                                        <Link to="Listings">All Property
                                             <span className="bi bi-chevron-right"></span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -25,7 +31,7 @@ class LatestHome extends React.Component<any, any>
                                 <div className="carousel-item-b swiper-slide">
                                     <div className="card-box-a card-shadow">
                                         <div className="img-box-a">
-                                            <img src="assets/img/property-6.jpg" alt="" className="img-a img-fluid" />
+                                            <img src={ Property6 } alt="" className="img-a img-fluid" />
                                         </div>
                                         <div className="card-overlay">
                                             <div className="card-overlay-a-content">
@@ -72,14 +78,14 @@ class LatestHome extends React.Component<any, any>
                                 <div className="carousel-item-b swiper-slide">
                                     <div className="card-box-a card-shadow">
                                         <div className="img-box-a">
-                                            <img src="assets/img/property-3.jpg" alt="" className="img-a img-fluid" />
+                                            <img src={ Property3 } alt="" className="img-a img-fluid" />
                                         </div>
                                         <div className="card-overlay">
                                             <div className="card-overlay-a-content">
                                                 <div className="card-header-a">
                                                     <h2 className="card-title-a">
-                                                        <a href="property-single.html">157 West
-                                                        <br /> Central Park</a>
+                                                        <Link to="/">157 West
+                                                        <br /> Central Park</Link>
                                                     </h2>
                                                 </div>
                                                 <div className="card-body-a">
@@ -119,15 +125,15 @@ class LatestHome extends React.Component<any, any>
                                 <div className="carousel-item-b swiper-slide">
                                     <div className="card-box-a card-shadow">
                                         <div className="img-box-a">
-                                            <img src="assets/img/property-7.jpg" alt="" className="img-a img-fluid" />
+                                            <img src={ Property7 } alt="" className="img-a img-fluid" />
                                         </div>
                                         <div className="card-overlay">
                                             <div className="card-overlay-a-content">
                                                 <div className="card-header-a">
                                                     <h2 className="card-title-a">
-                                                        <a href="property-single.html">245 Azabu
+                                                        <Link to="/">245 Azabu
                                                         <br /> Nishi Park let
-                                                        </a>
+                                                        </Link>
                                                     </h2>
                                                 </div>
                                                 <div className="card-body-a">
@@ -167,7 +173,7 @@ class LatestHome extends React.Component<any, any>
                                 <div className="carousel-item-b swiper-slide">
                                     <div className="card-box-a card-shadow">
                                         <div className="img-box-a">
-                                            <img src="assets/img/property-10.jpg" alt="" className="img-a img-fluid" />
+                                            <img src={ Property10 } alt="" className="img-a img-fluid" />
                                         </div>
                                         <div className="card-overlay">
                                             <div className="card-overlay-a-content">

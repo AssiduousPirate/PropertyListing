@@ -1,7 +1,8 @@
 import * as React from "react"
-class ProfilePage extends React.Component<any, any>
+import { Link } from "react-router-dom"
+class ProfilePage extends React.Component
 {
-    render(): React.ReactNode 
+    render()
     {
         return(
             <div>
@@ -19,10 +20,10 @@ class ProfilePage extends React.Component<any, any>
                                     <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
                                         <ol className="breadcrumb">
                                             <li className="breadcrumb-item">
-                                                <a href="#">Home</a>
+                                                <Link to="/">Home</Link>
                                             </li>
                                             <li className="breadcrumb-item">
-                                                <a href="#">Agents</a>
+                                                <Link to="/">Agents</Link>
                                             </li>
                                             <li className="breadcrumb-item active" aria-current="page">
                                             Margaret Stone
@@ -136,8 +137,8 @@ class ProfilePage extends React.Component<any, any>
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link to="/">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">
@@ -222,192 +223,192 @@ class ProfilePage extends React.Component<any, any>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                    <div className="card-box-a card-shadow">
-                                        <div className="img-box-a">
-                                        <img src="assets/img/property-6.jpg" alt="" className="img-a img-fluid">
-                                        </div>
-                                        <div className="card-overlay">
-                                        <div className="card-overlay-a-content">
-                                            <div className="card-header-a">
-                                            <h2 className="card-title-a">
-                                                <a href="#">204 Mount
-                                                <br /> Olive Road Two</a>
-                                            </h2>
+                                        <div className="card-box-a card-shadow">
+                                            <div className="img-box-a">
+                                                <img src="assets/img/property-6.jpg" alt="" className="img-a img-fluid" />
                                             </div>
-                                            <div className="card-body-a">
-                                            <div className="price-box d-flex">
-                                                <span className="price-a">rent | $ 12.000</span>
-                                            </div>
-                                            <a href="#" className="link-a">Click here to view
-                                                <span className="bi bi-chevron-right"></span>
-                                            </a>
-                                            </div>
-                                            <div className="card-footer-a">
-                                            <ul className="card-info d-flex justify-content-around">
-                                                <li>
-                                                <h4 className="card-info-title">Area</h4>
-                                                <span>340m
-                                                    <sup>2</sup>
-                                                </span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                                </li>
-                                            </ul>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                    <div className="card-box-a card-shadow">
-                                        <div className="img-box-a">
-                                        <img src="assets/img/property-7.jpg" alt="" className="img-a img-fluid">
-                                        </div>
-                                        <div className="card-overlay">
-                                        <div className="card-overlay-a-content">
-                                            <div className="card-header-a">
-                                            <h2 className="card-title-a">
-                                                <a href="#">204 Mount
-                                                <br /> Olive Road Two</a>
-                                            </h2>
-                                            </div>
-                                            <div className="card-body-a">
-                                            <div className="price-box d-flex">
-                                                <span className="price-a">rent | $ 12.000</span>
-                                            </div>
-                                            <a href="#" className="link-a">Click here to view
-                                                <span className="bi bi-chevron-right"></span>
-                                            </a>
-                                            </div>
-                                            <div className="card-footer-a">
-                                            <ul className="card-info d-flex justify-content-around">
-                                                <li>
-                                                <h4 className="card-info-title">Area</h4>
-                                                <span>340m
-                                                    <sup>2</sup>
-                                                </span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                                </li>
-                                            </ul>
+                                            <div className="card-overlay">
+                                                <div className="card-overlay-a-content">
+                                                    <div className="card-header-a">
+                                                        <h2 className="card-title-a">
+                                                            <a href="#">204 Mount
+                                                            <br /> Olive Road Two</a>
+                                                        </h2>
+                                                    </div>
+                                                    <div className="card-body-a">
+                                                        <div className="price-box d-flex">
+                                                            <span className="price-a">rent | $ 12.000</span>
+                                                        </div>
+                                                        <a href="#" className="link-a">Click here to view
+                                                            <span className="bi bi-chevron-right"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div className="card-footer-a">
+                                                        <ul className="card-info d-flex justify-content-around">
+                                                            <li>
+                                                                <h4 className="card-info-title">Area</h4>
+                                                                <span>340m
+                                                                    <sup>2</sup>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Beds</h4>
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Baths</h4>
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Garages</h4>
+                                                                <span>1</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        </div>
-                                    </div>
                                     </div>
                                     <div className="col-md-4">
-                                    <div className="card-box-a card-shadow">
-                                        <div className="img-box-a">
-                                        <img src="assets/img/property-8.jpg" alt="" className="img-a img-fluid">
+                                        <div className="card-box-a card-shadow">
+                                            <div className="img-box-a">
+                                                <img src="assets/img/property-7.jpg" alt="" className="img-a img-fluid" />
+                                            </div>
+                                            <div className="card-overlay">
+                                                <div className="card-overlay-a-content">
+                                                    <div className="card-header-a">
+                                                        <h2 className="card-title-a">
+                                                            <a href="#">204 Mount
+                                                            <br /> Olive Road Two</a>
+                                                        </h2>
+                                                    </div>
+                                                    <div className="card-body-a">
+                                                        <div className="price-box d-flex">
+                                                            <span className="price-a">rent | $ 12.000</span>
+                                                        </div>
+                                                        <a href="#" className="link-a">Click here to view
+                                                            <span className="bi bi-chevron-right"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div className="card-footer-a">
+                                                        <ul className="card-info d-flex justify-content-around">
+                                                            <li>
+                                                                <h4 className="card-info-title">Area</h4>
+                                                                <span>340m
+                                                                    <sup>2</sup>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Beds</h4>
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Baths</h4>
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Garages</h4>
+                                                                <span>1</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="card-overlay">
-                                        <div className="card-overlay-a-content">
-                                            <div className="card-header-a">
-                                            <h2 className="card-title-a">
-                                                <a href="#">204 Mount
-                                                <br /> Olive Road Two</a>
-                                            </h2>
-                                            </div>
-                                            <div className="card-body-a">
-                                            <div className="price-box d-flex">
-                                                <span className="price-a">rent | $ 12.000</span>
-                                            </div>
-                                            <a href="#" className="link-a">Click here to view
-                                                <span className="bi bi-chevron-right"></span>
-                                            </a>
-                                            </div>
-                                            <div className="card-footer-a">
-                                            <ul className="card-info d-flex justify-content-around">
-                                                <li>
-                                                <h4 className="card-info-title">Area</h4>
-                                                <span>340m
-                                                    <sup>2</sup>
-                                                </span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                                </li>
-                                            </ul>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                     <div className="col-md-4">
-                                    <div className="card-box-a card-shadow">
-                                        <div className="img-box-a">
-                                        <img src="assets/img/property-10.jpg" alt="" className="img-a img-fluid">
-                                        </div>
-                                        <div className="card-overlay">
-                                        <div className="card-overlay-a-content">
-                                            <div className="card-header-a">
-                                            <h2 className="card-title-a">
-                                                <a href="#">204 Mount
-                                                <br /> Olive Road Two</a>
-                                            </h2>
+                                        <div className="card-box-a card-shadow">
+                                            <div className="img-box-a">
+                                                <img src="assets/img/property-8.jpg" alt="" className="img-a img-fluid" />
                                             </div>
-                                            <div className="card-body-a">
-                                            <div className="price-box d-flex">
-                                                <span className="price-a">rent | $ 12.000</span>
+                                            <div className="card-overlay">
+                                                <div className="card-overlay-a-content">
+                                                    <div className="card-header-a">
+                                                        <h2 className="card-title-a">
+                                                            <a href="#">204 Mount
+                                                            <br /> Olive Road Two</a>
+                                                        </h2>
+                                                    </div>
+                                                    <div className="card-body-a">
+                                                        <div className="price-box d-flex">
+                                                            <span className="price-a">rent | $ 12.000</span>
+                                                        </div>
+                                                        <a href="#" className="link-a">Click here to view
+                                                            <span className="bi bi-chevron-right"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div className="card-footer-a">
+                                                        <ul className="card-info d-flex justify-content-around">
+                                                            <li>
+                                                                <h4 className="card-info-title">Area</h4>
+                                                                <span>340m
+                                                                    <sup>2</sup>
+                                                                </span>
+                                                                </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Beds</h4>
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Baths</h4>
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Garages</h4>
+                                                                <span>1</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <a href="#" className="link-a">Click here to view
-                                                <span className="bi bi-chevron-right"></span>
-                                            </a>
-                                            </div>
-                                            <div className="card-footer-a">
-                                            <ul className="card-info d-flex justify-content-around">
-                                                <li>
-                                                <h4 className="card-info-title">Area</h4>
-                                                <span>340m
-                                                    <sup>2</sup>
-                                                </span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Beds</h4>
-                                                <span>2</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Baths</h4>
-                                                <span>4</span>
-                                                </li>
-                                                <li>
-                                                <h4 className="card-info-title">Garages</h4>
-                                                <span>1</span>
-                                                </li>
-                                            </ul>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
+                                    <div className="col-md-4">
+                                        <div className="card-box-a card-shadow">
+                                            <div className="img-box-a">
+                                                <img src="assets/img/property-10.jpg" alt="" className="img-a img-fluid" />
+                                            </div>
+                                            <div className="card-overlay">
+                                                <div className="card-overlay-a-content">
+                                                    <div className="card-header-a">
+                                                        <h2 className="card-title-a">
+                                                            <a href="#">204 Mount
+                                                            <br /> Olive Road Two</a>
+                                                        </h2>
+                                                    </div>
+                                                    <div className="card-body-a">
+                                                        <div className="price-box d-flex">
+                                                            <span className="price-a">rent | $ 12.000</span>
+                                                        </div>
+                                                        <a href="#" className="link-a">Click here to view
+                                                            <span className="bi bi-chevron-right"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div className="card-footer-a">
+                                                        <ul className="card-info d-flex justify-content-around">
+                                                            <li>
+                                                                <h4 className="card-info-title">Area</h4>
+                                                                <span>340m
+                                                                    <sup>2</sup>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Beds</h4>
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Baths</h4>
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li>
+                                                                <h4 className="card-info-title">Garages</h4>
+                                                                <span>1</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

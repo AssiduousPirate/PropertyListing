@@ -3,9 +3,10 @@ import { Link } from "react-router-dom"
 import agent4 from "../Assets/img/agent-4"
 import agent1 from "../Assets/img/agent-1"
 import agent5 from "../Assets/img/agent-5"
-class BestAgent extends React.Component<any, any>
+class BestAgent extends React.Component
 {
-    render(): React.ReactNode {
+    render() 
+    {
         return(
             <div>
                 <section className="section-agents section-t8">

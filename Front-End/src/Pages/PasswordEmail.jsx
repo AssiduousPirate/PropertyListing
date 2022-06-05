@@ -1,8 +1,8 @@
 import * as React from "react"
 let API_URL = "http://localhost:8080/api/auth/ResetPassword"
-class PasswordEmail extends React.Component<any, any>
+class PasswordEmail extends React.Component
 {
-    constructor(props: any){
+    constructor(props){
         super(props)
         this.state = {
             email: "",
@@ -12,14 +12,14 @@ class PasswordEmail extends React.Component<any, any>
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
-    handleChange(event: any){
+    handleChange(event){
         const name = event.target.name
         const value = event.target.value
         this.setState({
             [name]: value
         })
     }
-    handleSubmit(event: any){
+    handleSubmit(event){
         event.preventDefault()
         if(this.state.email === " " && this.state.email === null){
             this.setState({
@@ -63,7 +63,7 @@ class PasswordEmail extends React.Component<any, any>
                 })
         }
     }
-    render(): React.ReactNode 
+    render() 
     {
         return(
             <div>
