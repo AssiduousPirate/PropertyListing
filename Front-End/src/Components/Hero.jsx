@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import slider1 from "../Assets/img/slide-1"
-import slider2 from "../Assets/img/slide-2"
-import slider3 from "../Assets/img/slide-3"
+import slider1 from "../Assets/img/slide-1.jpg"
+import slider2 from "../Assets/img/slide-2.jpg"
+import slider3 from "../Assets/img/slide-3.jpg"
 class Hero extends React.Component
 {
     render()

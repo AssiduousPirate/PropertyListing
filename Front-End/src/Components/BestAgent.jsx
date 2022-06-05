@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import agent4 from "../Assets/img/agent-4"
-import agent1 from "../Assets/img/agent-1"
-import agent5 from "../Assets/img/agent-5"
+import agent4 from "../Assets/img/agent-4.jpg"
+import agent1 from "../Assets/img/agent-1.jpg"
+import agent5 from "../Assets/img/agent-5.jpg"
 class BestAgent extends React.Component
 {
     render() 
@@ -18,7 +18,7 @@ class BestAgent extends React.Component
                                         <h2 className="title-a">Best Agents</h2>
                                     </div>
                                     <div className="title-link">
-                                        <Link to="agents-grid.html">All Agents
+                                        <Link to="/ProfilePage">All Agents
                                             <span className="bi bi-chevron-right"></span>
                                         </Link>
                                     </div>

@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import Property6 from "../Assets/img/property-6"
-import Property3 from "../Assets/img/property-3"
-import Property7 from "../Assets/img/property-7"
-import Property10 from "../Assets/img/property-10"
+import Property6 from "../Assets/img/property-6.jpg"
+import Property3 from "../Assets/img/property-3.jpg"
+import Property7 from "../Assets/img/property-7.jpg"
+import Property10 from "../Assets/img/property-10.jpg"
 class LatestHome extends React.Component
 {
     render()
@@ -19,9 +19,7 @@ class LatestHome extends React.Component
                                         <h2 className="title-a">Latest Properties</h2>
                                     </div>
                                     <div className="title-link">
-                                        <Link to="Listings">All Property
-                                            <span className="bi bi-chevron-right"></span>
-                                        </Link>
+                                        <Link to="/Listings">All Property</Link>
                                     </div>
                                 </div>
                             </div>
@@ -37,17 +35,17 @@ class LatestHome extends React.Component
                                             <div className="card-overlay-a-content">
                                                 <div className="card-header-a">
                                                     <h2 className="card-title-a">
-                                                        <a href="property-single.html">206 Mount
-                                                        <br /> Olive Road Two</a>
+                                                        <Link to="/ListingPage">206 Mount
+                                                        <br /> Olive Road Two</Link>
                                                     </h2>
                                                 </div>
                                                 <div className="card-body-a">
                                                     <div className="price-box d-flex">
                                                         <span className="price-a">rent | $ 12.000</span>
                                                     </div>
-                                                    <a href="#" className="link-a">Click here to view
+                                                    <Link to="#" className="link-a">Click here to view
                                                         <span className="bi bi-chevron-right"></span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="card-footer-a">
                                                     <ul className="card-info d-flex justify-content-around">
@@ -92,9 +90,9 @@ class LatestHome extends React.Component
                                                     <div className="price-box d-flex">
                                                         <span className="price-a">rent | $ 12.000</span>
                                                     </div>
-                                                    <a href="property-single.html" className="link-a">Click here to view
+                                                    <Link to="/ListingPage" className="link-a">Click here to view
                                                         <span className="bi bi-chevron-right"></span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="card-footer-a">
                                                     <ul className="card-info d-flex justify-content-around">
@@ -179,8 +177,8 @@ class LatestHome extends React.Component
                                             <div className="card-overlay-a-content">
                                                 <div className="card-header-a">
                                                     <h2 className="card-title-a">
-                                                        <a href="property-single.html">204 Montal
-                                                        <br /> South Bela Two</a>
+                                                        <Link to="/ListingPage">204 Montal
+                                                        <br /> South Bela Two</Link>
                                                     </h2>
                                                 </div>
                                                 <div className="card-body-a">

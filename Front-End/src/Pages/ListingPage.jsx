@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import slide1 from "../Assets/img/slide-1"
-import slide2 from "../Assets/img/slide-2"
-import plan2 from "../Assets/img/plan-2"
-import Linkgent4 from "../Assets/img/Linkgent-4"
+import slide1 from "../Assets/img/slide-1.jpg"
+import slide2 from "../Assets/img/slide-2.jpg"
+import plan2 from "../Assets/img/plan2.jpg"
+import Linkgent4 from "../Assets/img/plan2.jpg"
 class ListingPage extends React.Component
 {
     render()

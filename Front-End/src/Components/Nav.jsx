@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
 class NavPage extends React.Component
 {
     render()
@@ -17,21 +19,21 @@ class NavPage extends React.Component
                         <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link className="nav-link " to={"/"}>Home</Link>
+                                    <Link className="nav-link active" to={"/"}>Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to={"/Listings"}>Property</Link>
+                                    <Link className="nav-link" to={"/Listings"}>Property</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to={"/AddProperty"}>Add Property</Link>
+                                    <Link className="nav-link" to={"/AddProperty"}>Add Property</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to={"/Contact"}>Contact</Link>
+                                    <Link className="nav-link" to={"/Contact"}>Contact</Link>
                                 </li>
                             </ul>
                         </div>
                         <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                            <i className="bi bi-search"></i>
+                            <FontAwesomeIcon icon={ faSearch } />
                         </button>
                     </div>
                 </nav>

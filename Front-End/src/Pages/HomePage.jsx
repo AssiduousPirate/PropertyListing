@@ -1,4 +1,6 @@
 import * as React from "react"
+import "../App.css"
+import '../Components/Main'
 import BestAgent from "../Components/BestAgent"
 import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
@@ -20,7 +22,7 @@ class HomePage extends React.Component
                         <BestAgent />
                     </main>
                     <Footer />
-                <div id="preloader"></div>
+                {/* <div id="preloader"></div> */}
                 <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
             </div>
         )
