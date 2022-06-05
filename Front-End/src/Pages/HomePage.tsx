@@ -1,23 +1,27 @@
 import * as React from "react"
-import { Link } from "react-router-dom"
+import BestAgent from "../Components/BestAgent"
+import Footer from "../Components/Footer"
+import Hero from "../Components/Hero"
+import LatestHome from "../Components/LatestHome"
+import NavPage from "../Components/Nav"
+import Search from "../Components/Search"
 class HomePage extends React.Component<any, any>
 {
     render(): React.ReactNode 
     {
         return(
             <div>
-                <h1 className={"text-center pt-20 text-medium text-red-300"}>Home Page</h1>
-                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Listings"}>Listings Page</Link>
-                <br />
-                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Register"}>Register Page</Link>
-                <br />
-                <br />
-                <br />
-                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/ThankYou"}>Thank you Page</Link>
-                <br />
-                <br />
-                <br />
-                <Link className={"text-center pt-20 text-medium text-red-300"} to={"/Error"}>Error Page</Link>
+                <div className="click-closed"></div>
+                <NavPage />
+                <Search />
+                <Hero />
+                    <main id="main">
+                        <LatestHome />
+                        <BestAgent />
+                    </main>
+                    <Footer />
+                <div id="preloader"></div>
+                <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
             </div>
         )
     }

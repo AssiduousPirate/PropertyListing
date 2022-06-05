@@ -16,7 +16,7 @@ export default class App extends React.Component<any, any>
 {
     render(){
         return(
-            <>
+            <div className="body">
                 <Router>
                     <Routes>
                         <Route path={"/"} element={ <HomePage />}></Route>
@@ -32,7 +32,7 @@ export default class App extends React.Component<any, any>
                         <Route path={"/Error"} element={ <ErrorPage />}></Route>
                     </Routes>
                 </Router>
-            </>
+            </div>
         )
     }
 }
