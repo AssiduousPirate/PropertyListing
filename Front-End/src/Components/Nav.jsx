@@ -33,7 +33,9 @@ class NavPage extends React.Component
                             </ul>
                         </div>
                         <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                            <FontAwesomeIcon icon={ faSearch } />
+                            <Link to="/Search">
+                                <FontAwesomeIcon icon={ faSearch } />
+                            </Link>
                         </button>
                     </div>
                 </nav>

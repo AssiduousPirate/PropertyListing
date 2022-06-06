@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 class Footer extends React.Component
 {
     render()
@@ -41,22 +43,22 @@ class Footer extends React.Component
                                         <div className="w-body-a">
                                             <ul className="list-unstyled">
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Site Map</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Site Map</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Legal</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Legal</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Agent Admin</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Agent Admin</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Careers</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Careers</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Affiliate</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Affiliate</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <i className="bi bi-chevron-right"></i> <Link to="#">Privacy Policy</Link>
+                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Privacy Policy</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -71,22 +73,22 @@ class Footer extends React.Component
                                     <div className="w-body-a">
                                         <ul className="list-unstyled">
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">Venezuela</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Venezuela</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">China</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">China</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">Hong Kong</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Hong Kong</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">Argentina</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Argentina</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">Singapore</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Singapore</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <i className="bi bi-chevron-right"></i> <Link to="#">Philippines</Link>
+                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Philippines</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -102,23 +104,23 @@ class Footer extends React.Component
                                 <div className="socials-a">
                                     <ul className="list-inline">
                                         <li className="list-inline-item">
-                                            <Link to="#">
+                                            <Link className="Link" to="#">
                                                 <i className="bi bi-facebook" aria-hidden="true"></i>
                                             </Link>
                                         </li>
                                         <li className="list-inline-item">
-                                            <Link to="#">
+                                            <Link className="Link" to="#">
                                                 <i className="bi bi-twitter" aria-hidden="true"></i>
                                             </Link>
                                         </li>
                                         <li className="list-inline-item">
-                                            <Link to="#">
+                                            <Link className="Link" to="#">
                                                 <i className="bi bi-instagram" aria-hidden="true"></i>
                                             </Link>
                                         </li>
                                         <li className="list-inline-item">
-                                            <Link to="#">
-                                                <i className="bi bi-linkedin" aria-hidden="true"></i>
+                                            <Link className="Link" to="#">
+                                                <i className="bi bi-Linkedin" aria-hidden="true"></i>
                                             </Link>
                                         </li>
                                     </ul>

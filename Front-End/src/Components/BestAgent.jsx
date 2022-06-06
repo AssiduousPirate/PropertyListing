@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import agent4 from "../Assets/img/agent-4.jpg"
 import agent1 from "../Assets/img/agent-1.jpg"
 import agent5 from "../Assets/img/agent-5.jpg"
@@ -19,7 +21,7 @@ class BestAgent extends React.Component
                                     </div>
                                     <div className="title-link">
                                         <Link to="/ProfilePage">All Agents
-                                            <span className="bi bi-chevron-right"></span>
+                                            <FontAwesomeIcon icon={ faChevronRight } />
                                         </Link>
                                     </div>
                                 </div>

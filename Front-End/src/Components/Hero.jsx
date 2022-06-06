@@ -8,7 +8,7 @@ class Hero extends React.Component
     render()
     {
         const myStyle1 = {
-            backgroundImage: slider1
+            backgroundColor: "#000"
         }
         const myStyle2 = {
             backgroundImage: slider2
