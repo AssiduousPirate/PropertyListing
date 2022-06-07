@@ -14,7 +14,7 @@ class Footer extends React.Component
                             <div className="col-sm-12 col-md-4">
                                 <div className="widget-a">
                                     <div className="w-header-a">
-                                        <h3 className="w-title-a text-brand">EstateAgency</h3>
+                                        <h3 className="w-title-a text-brand"><Link className="text-decoration-none text-dark" to="/">Estate<span className="color-b">Agency</span></Link></h3>
                                     </div>
                                     <div className="w-body-a">
                                         <p className="w-text-a color-text-a">
@@ -43,22 +43,22 @@ class Footer extends React.Component
                                         <div className="w-body-a">
                                             <ul className="list-unstyled">
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Site Map</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Site Map</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Legal</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Legal</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Agent Admin</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Agent Admin</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Careers</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Careers</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Affiliate</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Affiliate</Link>
                                                 </li>
                                                 <li className="item-list-a">
-                                                    <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Privacy Policy</Link>
+                                                    <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Privacy Policy</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -73,22 +73,22 @@ class Footer extends React.Component
                                     <div className="w-body-a">
                                         <ul className="list-unstyled">
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Venezuela</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Venezuela</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">China</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">China</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Hong Kong</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Hong Kong</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Argentina</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Argentina</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Singapore</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Singapore</Link>
                                             </li>
                                             <li className="item-list-a">
-                                                <FontAwesomeIcon className="FontAwesomeIcon" icon={ faChevronRight } /> <Link className="Link" to="#">Philippines</Link>
+                                                <FontAwesomeIcon className="text-decoration-none text-dark" icon={ faChevronRight } /> <Link className="Link text-decoration-none text-dark" to="#">Philippines</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -128,7 +128,7 @@ class Footer extends React.Component
                                 <div className="copyright-footer">
                                     <p className="copyright color-text-a">
                                         &copy; Copyright
-                                        <span className="color-a">EstateAgency</span> All Rights Reserved.
+                                        <span className="color-a"><Link className="text-decoration-none text-dark m-1" to="/">Estate<span className="color-b">Agency</span></Link></span> All Rights Reserved.
                                     </p>
                                 </div>
                             </div>

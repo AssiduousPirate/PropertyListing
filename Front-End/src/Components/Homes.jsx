@@ -28,7 +28,7 @@ class Homes extends React.Component
                             <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                <Link to="#">Home</Link>
+                                <Link className="text-decoration-none text-white" to="#">Home</Link>
                                 </li>
                                 <li className="breadcrumb-item active" aria-current="page">
                                 Properties Grid
@@ -63,7 +63,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -71,7 +71,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -110,7 +110,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white"  to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -118,7 +118,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -157,7 +157,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -165,7 +165,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -204,7 +204,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -212,7 +212,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -251,7 +251,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -259,7 +259,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -298,7 +298,7 @@ class Homes extends React.Component
                                 <div className="card-overlay-a-content">
                                 <div className="card-header-a">
                                     <h2 className="card-title-a">
-                                    <Link to="#">204 Mount
+                                    <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                         <br /> Olive Road Two</Link>
                                     </h2>
                                 </div>
@@ -306,7 +306,7 @@ class Homes extends React.Component
                                     <div className="price-box d-flex">
                                     <span className="price-a">rent | $ 12.000</span>
                                     </div>
-                                    <Link to="/ListingPage" className="link-a">Click here to view
+                                    <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                     </Link>
                                 </div>
@@ -342,21 +342,21 @@ class Homes extends React.Component
                             <nav className="pagination-a">
                             <ul className="pagination justify-content-end">
                                 <li className="page-item disabled">
-                                <Link className="page-link" to="#" tabindex="-1">
+                                <Link className="text-decoration-none text-white" className="page-link" to="#" tabindex="-1">
                                 <FontAwesomeIcon icon={ faChevronLeft } />
                                 </Link>
                                 </li>
                                 <li className="page-item">
-                                <Link className="page-link" to="#">1</Link>
+                                <Link className="text-decoration-none text-white" className="page-link" to="#">1</Link>
                                 </li>
                                 <li className="page-item active">
-                                <Link className="page-link" to="#">2</Link>
+                                <Link className="text-decoration-none text-white" className="page-link" to="#">2</Link>
                                 </li>
                                 <li className="page-item">
-                                <Link className="page-link" to="#">3</Link>
+                                <Link className="text-decoration-none text-white" className="page-link" to="#">3</Link>
                                 </li>
                                 <li className="page-item next">
-                                <Link className="page-link" to="#">
+                                <Link className="text-decoration-none text-white" className="page-link" to="#">
                                     <FontAwesomeIcon icon={ faChevronRight } />
                                 </Link>
                                 </li>

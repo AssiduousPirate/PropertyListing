@@ -1,9 +1,8 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
 import slide1 from "../Assets/img/slide-1.jpg"
-import slide2 from "../Assets/img/slide-2.jpg"
 import plan2 from "../Assets/img/plan2.jpg"
-import Linkgent4 from "../Assets/img/plan2.jpg"
+import agent1 from "../Assets/img/agent-1.jpg"
 class ListingPage extends React.Component
 {
     render()
@@ -24,10 +23,10 @@ class ListingPage extends React.Component
                                     <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
                                         <ol className="breadcrumb">
                                             <li className="breadcrumb-item">
-                                                <Link to="/">Home</Link>
+                                                <Link className="text-decoration-none text-dark" to="/">Home</Link>
                                             </li>
                                             <li className="breadcrumb-item">
-                                                <Link to="/Listings">Properties</Link>
+                                                <Link className="text-decoration-none text-dark" to="/Listings">Properties</Link>
                                             </li>
                                             <li className="breadcrumb-item active" aria-current="page">
                                               304 Blaster Up
@@ -42,21 +41,17 @@ class ListingPage extends React.Component
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-8">
-                                    <div id="property-single-carousel" className="swiper">
-                                        <div className="swiper-wrapper">
-                                            <div className="carousel-item-b swiper-slide">
+                                    <div id="property-single">
+                                        <div className="wrapper">
+                                            <div className="item-b">
                                                 <img src={ slide1 } alt="" />
-                                            </div>
-                                            <div className="carousel-item-b swiper-slide">
-                                                <img src={ slide2 } alt="" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="property-single-carousel-pagination carousel-pagination"></div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-sm-12">                 
+                                <div className="col-sm-12">
                                     <div className="row justify-content-between">
                                         <div className="col-md-5 col-lg-4">
                                             <div className="property-price d-flex justify-content-center foo">
@@ -165,7 +160,7 @@ class ListingPage extends React.Component
                                 <div className="col-md-10 offset-md-1">
                                     <ul className="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
                                         <li className="nav-item">
-                                            <Link className="nav-link active" id="pills-video-tab" data-bs-toggle="pill" to="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video</Link>
+                                            <Link className="nav-link active " id="pills-video-tab" data-bs-toggle="pill" to="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link className="nav-link" id="pills-plans-tab" data-bs-toggle="pill" to="#pills-plans" role="tab" aria-controls="pills-plans" aria-selected="false">Floor Plans</Link>
@@ -196,7 +191,7 @@ class ListingPage extends React.Component
                                     </div>
                                     <div className="row">
                                         <div className="col-md-6 col-lg-4">
-                                            <img src={ Linkgent4 } alt="" className="img-fluid" />
+                                            <img src={ agent1 } alt="" className="img-fluid" />
                                         </div>
                                         <div className="col-md-6 col-lg-4">
                                             <div className="property-agent">

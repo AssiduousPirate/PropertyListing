@@ -23,7 +23,7 @@ class LatestHome extends React.Component
                                         <h2 className="title-a">Latest Properties</h2>
                                     </div>
                                     <div className="title-link">
-                                        <Link to="/Listings">All Property
+                                        <Link className="text-decoration-none text-dark" to="/Listings">All Property
                                             <FontAwesomeIcon icon={ faChevronRight } />
                                         </Link>
                                     </div>
@@ -42,7 +42,7 @@ class LatestHome extends React.Component
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
+                                                        <Link className="text-decoration-none text-white"  to="/ListingPage">205 Mount
                                                             <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
@@ -50,7 +50,7 @@ class LatestHome extends React.Component
                                                         <div className="price-box d-flex">
                                                             <span className="price-a">rent | $ 12.000</span>
                                                         </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
+                                                        <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                                             <FontAwesomeIcon icon={ faChevronRight } />
                                                         </Link>
                                                     </div>
@@ -89,7 +89,7 @@ class LatestHome extends React.Component
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
+                                                        <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                                             <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
@@ -97,7 +97,7 @@ class LatestHome extends React.Component
                                                         <div className="price-box d-flex">
                                                         <span className="price-a">rent | $ 12.000</span>
                                                         </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
+                                                        <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                                         <FontAwesomeIcon icon={ faChevronRight } />
                                                         </Link>
                                                     </div>
@@ -136,7 +136,7 @@ class LatestHome extends React.Component
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
+                                                        <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                                             <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
@@ -144,148 +144,7 @@ class LatestHome extends React.Component
                                                         <div className="price-box d-flex">
                                                         <span className="price-a">rent | $ 12.000</span>
                                                         </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
-                                                        <FontAwesomeIcon icon={ faChevronRight } />
-                                                        </Link>
-                                                    </div>
-                                                    <div className="card-footer-a">
-                                                        <ul className="card-info d-flex justify-content-around">
-                                                        <li>
-                                                            <h4 className="card-info-title">Area</h4>
-                                                            <span>340m
-                                                            <sup>2</sup>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Beds</h4>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Baths</h4>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Garages</h4>
-                                                            <span>1</span>
-                                                        </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="card-box-a card-shadow">
-                                            <div className="img-box-a">
-                                                <img src={ Property7 } alt="" className="img-a img-fluid" />
-                                            </div>
-                                            <div className="card-overlay">
-                                                <div className="card-overlay-a-content">
-                                                    <div className="card-header-a">
-                                                        <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
-                                                            <br /> Olive Road Two</Link>
-                                                        </h2>
-                                                    </div>
-                                                    <div className="card-body-a">
-                                                        <div className="price-box d-flex">
-                                                        <span className="price-a">rent | $ 12.000</span>
-                                                        </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
-                                                        <FontAwesomeIcon icon={ faChevronRight } />
-                                                        </Link>
-                                                    </div>
-                                                    <div className="card-footer-a">
-                                                        <ul className="card-info d-flex justify-content-around">
-                                                        <li>
-                                                            <h4 className="card-info-title">Area</h4>
-                                                            <span>340m
-                                                            <sup>2</sup>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Beds</h4>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Baths</h4>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Garages</h4>
-                                                            <span>1</span>
-                                                        </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="card-box-a card-shadow">
-                                            <div className="img-box-a">
-                                                <img src={ Property8 } alt="" className="img-a img-fluid" />
-                                            </div>
-                                            <div className="card-overlay">
-                                                <div className="card-overlay-a-content">
-                                                    <div className="card-header-a">
-                                                        <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
-                                                            <br /> Olive Road Two</Link>
-                                                        </h2>
-                                                    </div>
-                                                    <div className="card-body-a">
-                                                        <div className="price-box d-flex">
-                                                        <span className="price-a">rent | $ 12.000</span>
-                                                        </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
-                                                        <FontAwesomeIcon icon={ faChevronRight } />
-                                                        </Link>
-                                                    </div>
-                                                    <div className="card-footer-a">
-                                                        <ul className="card-info d-flex justify-content-around">
-                                                        <li>
-                                                            <h4 className="card-info-title">Area</h4>
-                                                            <span>340m
-                                                            <sup>2</sup>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Beds</h4>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Baths</h4>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4 className="card-info-title">Garages</h4>
-                                                            <span>1</span>
-                                                        </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="card-box-a card-shadow">
-                                            <div className="img-box-a">
-                                                <img src={ Property10 } alt="" className="img-a img-fluid" />
-                                            </div>
-                                            <div className="card-overlay">
-                                                <div className="card-overlay-a-content">
-                                                    <div className="card-header-a">
-                                                        <h2 className="card-title-a">
-                                                        <Link to="#">204 Mount
-                                                            <br /> Olive Road Two</Link>
-                                                        </h2>
-                                                    </div>
-                                                    <div className="card-body-a">
-                                                        <div className="price-box d-flex">
-                                                        <span className="price-a">rent | $ 12.000</span>
-                                                        </div>
-                                                        <Link to="/ListingPage" className="link-a">Click here to view
+                                                        <Link className="text-decoration-none text-white link-a" to="/ListingPage">Click here to view
                                                         <FontAwesomeIcon icon={ faChevronRight } />
                                                         </Link>
                                                     </div>

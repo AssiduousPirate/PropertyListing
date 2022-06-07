@@ -1,5 +1,12 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+import agent7 from "../Assets/img/agent-7.jpg"
+import property1 from "../Assets/img/property-1.jpg"
+import property3 from "../Assets/img/property-3.jpg"
+import property6 from "../Assets/img/property-6.jpg"
+import property7 from "../Assets/img/property-7.jpg"
+import property8 from "../Assets/img/property-8.jpg"
+import property10 from "../Assets/img/property-10.jpg"
 class ProfilePage extends React.Component
 {
     render()
@@ -20,10 +27,10 @@ class ProfilePage extends React.Component
                                     <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
                                         <ol className="breadcrumb">
                                             <li className="breadcrumb-item">
-                                                <Link to="/">Home</Link>
+                                                <Link className="text-decoration-none text-dark" to="/">Home</Link>
                                             </li>
                                             <li className="breadcrumb-item">
-                                                <Link to="/">Agents</Link>
+                                                <Link className="text-decoration-none text-dark" to="/">Agents</Link>
                                             </li>
                                             <li className="breadcrumb-item active" aria-current="page">
                                             Margaret Stone
@@ -41,7 +48,7 @@ class ProfilePage extends React.Component
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="agent-avatar-box">
-                                                <img src="assets/img/agent-7.jpg" alt="" className="agent-avatar img-fluid" />
+                                                <img src={ agent7 } alt="" className="agent-avatar img-fluid" />
                                             </div>
                                         </div>
                                         <div className="col-md-5 section-md-t3">
@@ -131,13 +138,13 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-1.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property1 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <Link to="/">204 Mount
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
                                                             <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
@@ -178,14 +185,14 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-3.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property3 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">
@@ -225,14 +232,14 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-6.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property6 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">
@@ -272,14 +279,14 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-7.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property7 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">
@@ -319,14 +326,14 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-8.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property8 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">
@@ -366,14 +373,14 @@ class ProfilePage extends React.Component
                                     <div className="col-md-4">
                                         <div className="card-box-a card-shadow">
                                             <div className="img-box-a">
-                                                <img src="assets/img/property-10.jpg" alt="" className="img-a img-fluid" />
+                                                <img src={ property10 } alt="" className="img-a img-fluid" />
                                             </div>
                                             <div className="card-overlay">
                                                 <div className="card-overlay-a-content">
                                                     <div className="card-header-a">
                                                         <h2 className="card-title-a">
-                                                            <a href="#">204 Mount
-                                                            <br /> Olive Road Two</a>
+                                                            <Link className="text-decoration-none text-white" to="/ListingPage">204 Mount
+                                                            <br /> Olive Road Two</Link>
                                                         </h2>
                                                     </div>
                                                     <div className="card-body-a">

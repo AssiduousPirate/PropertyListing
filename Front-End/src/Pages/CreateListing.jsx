@@ -1,8 +1,6 @@
 import * as React from "react"
-class ProfileUpdate extends React.Component
-{
-    render()
-    {
+class CreateListing extends React.Component{
+    render(){
         return(
             <div className="p-5 m-5">
                 <form className="p-5 m-5">
@@ -42,12 +40,12 @@ class ProfileUpdate extends React.Component
                     </div>
                     <div class="form-check d-flex justify-content-center mb-4">
                         <input class="form-check-input me-2" type="checkbox" value="" checked />
-                        <label class="form-check-label"> Create an account? </label>
+                        <label class="form-check-label"> Create your Property </label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Add Property</button>
                 </form>
             </div>
         )
     }
 }
-export default ProfileUpdate
+export default CreateListing

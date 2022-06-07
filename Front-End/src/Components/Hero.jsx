@@ -8,17 +8,11 @@ class Hero extends React.Component
     render()
     {
         const myStyle1 = {
-            backgroundColor: "#000"
-        }
-        const myStyle2 = {
-            backgroundImage: slider2
-        }
-        const myStyle3 = {
-            backgroundImage: slider3
+            backgroundColor: slider2
         }
         return(
             <div>
-                <div className="intro intro-carousel swiper position-relative">
+                <div className="intro intro-carousel position-relative">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide carousel-item-a intro-item bg-image" style={ myStyle1 }>
                             <div className="overlay overlay-a"></div>
@@ -36,57 +30,7 @@ class Hero extends React.Component
                                                         <br /> Olive Road Two
                                                     </h1>
                                                     <p className="intro-subtitle intro-price">
-                                                        <Link to="/ListingPage"><span className="price-a">rent | $ 12.000</span></Link>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image" style={ myStyle2 }>
-                            <div className="overlay overlay-a"></div>
-                            <div className="intro-content display-table">
-                                <div className="table-cell">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-8">
-                                                <div className="intro-body">
-                                                    <p className="intro-title-top">Doral, Florida
-                                                    <br /> 78345
-                                                    </p>
-                                                    <h1 className="intro-title mb-4">
-                                                        <span className="color-b">204 </span> Rino
-                                                    <br /> Venda Road Five
-                                                    </h1>
-                                                    <p className="intro-subtitle intro-price">
-                                                        <Link to="/ListingPage"><span className="price-a">rent | $ 12.000</span></Link>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide carousel-item-a intro-item bg-image" style={ myStyle3 }>
-                            <div className="overlay overlay-a"></div>
-                            <div className="intro-content display-table">
-                                <div className="table-cell">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-8">
-                                                <div className="intro-body">
-                                                    <p className="intro-title-top">Doral, Florida
-                                                    <br /> 78345
-                                                    </p>
-                                                    <h1 className="intro-title mb-4">
-                                                        <span className="color-b">204 </span> Alira
-                                                        <br /> Roan Road One
-                                                    </h1>
-                                                    <p className="intro-subtitle intro-price">
-                                                        <Link to="/ListingPage"><span className="price-a">rent | $ 12.000</span></Link>
+                                                        <Link className="text-decoration-none text-white" to="/ListingPage"><span className="price-a">rent | $ 12.000</span></Link>
                                                     </p>
                                                 </div>
                                             </div>

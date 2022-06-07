@@ -15,7 +15,7 @@ class NavPage extends React.Component
                             <span></span>
                             <span></span>
                         </button>
-                        <Link className="navbar-brand text-brand" to={"/"}>Estate<span className="color-b">Agency</span></Link>
+                        <Link className="navbar-brand text-brand text-decoration-none text-dark" to={"/"}>Estate<span className="color-b">Agency</span></Link>
                         <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
@@ -25,15 +25,18 @@ class NavPage extends React.Component
                                     <Link className="nav-link" to={"/Listings"}>Property</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={"/AddProperty"}>Add Property</Link>
+                                    <Link className="nav-link" to={"/CreateProfile"}>Add Property</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to={"/Contact"}>Contact</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to={"/Login"}>Login</Link>
+                                </li>
                             </ul>
                         </div>
                         <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                            <Link to="/Search">
+                            <Link className="text-decoration-none text-white" to="/Search">
                                 <FontAwesomeIcon icon={ faSearch } />
                             </Link>
                         </button>

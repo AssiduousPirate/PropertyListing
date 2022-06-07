@@ -7,7 +7,7 @@ import agent1 from "../Assets/img/agent-1.jpg"
 import agent5 from "../Assets/img/agent-5.jpg"
 class BestAgent extends React.Component
 {
-    render() 
+    render()
     {
         return(
             <div>
@@ -20,7 +20,7 @@ class BestAgent extends React.Component
                                         <h2 className="title-a">Best Agents</h2>
                                     </div>
                                     <div className="title-link">
-                                        <Link to="/ProfilePage">All Agents
+                                        <Link className="text-decoration-none text-dark" to="/Agents">All Agents
                                             <FontAwesomeIcon icon={ faChevronRight } />
                                         </Link>
                                     </div>
@@ -37,7 +37,7 @@ class BestAgent extends React.Component
                                         <div className="card-header-d">
                                             <div className="card-title-d align-self-center">
                                                 <h3 className="title-d">
-                                                <Link to={"/Profile"} className="link-two">Margaret Sotillo
+                                                <Link className="text-decoration-none text-dark link-two" to={"/Profile"}>Margaret Sotillo
                                                     <br /> Escala</Link>
                                                 </h3>
                                             </div>
@@ -93,7 +93,7 @@ class BestAgent extends React.Component
                                         <div className="card-header-d">
                                             <div className="card-title-d align-self-center">
                                                 <h3 className="title-d">
-                                                <Link to={"/Profile"} className="link-two">Stiven Spilver
+                                                <Link className="text-decoration-none text-dark link-two" to={"/Profile"}>Stiven Spilver
                                                     <br /> Darw</Link>
                                                 </h3>
                                             </div>
@@ -149,7 +149,7 @@ class BestAgent extends React.Component
                                         <div className="card-header-d">
                                             <div className="card-title-d align-self-center">
                                                 <h3 className="title-d">
-                                                <Link to={"/Profile"} className="link-two">Emma Toledo
+                                                <Link className="text-decoration-none text-dark link-two" to={"/Profile"}>Emma Toledo
                                                     <br /> Cascada</Link>
                                                 </h3>
                                             </div>

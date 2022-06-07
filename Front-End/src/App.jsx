@@ -1,7 +1,5 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowUpShortWide } from "@fortawesome/free-solid-svg-icons"
 import "./App.css"
 import "./Components/Main"
 import HomePage from './Pages/HomePage'
@@ -17,32 +15,40 @@ import ErrorPage from './Pages/Error'
 import Homes from './Components/Homes'
 import Search from './Components/Search'
 import Contact from './Components/Contact'
-import Footer from "./Components/Footer"
+import NavPage from './Components/Nav'
+import Footer from './Components/Footer'
+import ListingPage from './Pages/ListingPage'
+import CreateProfile from './Pages/CreateProfile'
+import CreateListing from './Pages/CreateListing'
+import AgentsPages from './Pages/AgentsPages'
 export default class App extends React.Component
 {
     render(){
         return(
             <div className="body">
                 <Router>
-                    <Routes>
-                        <Route path={"/"} element={ <HomePage />}></Route>
-                        <Route path={"/Listings"} element={ <Homes />}></Route>
-                        <Route path={"/ListingUpdate"} element={ <ListingUpdate />}></Route>
-                        <Route path={"/Login"} element={ <Login />}></Route>
-                        <Route path={"/Register"} element={ <Register />}></Route>
-                        <Route path={"/PasswordEmail"} element={ <PasswordEmail />}></Route>
-                        <Route path={"/PasswordReset"} element={ <PasswordReset />}></Route>
-                        <Route path={"/ThankYou"} element={ <ThankYou />}></Route>
-                        <Route path={"/Profile"} element={ <ProfilePage />}></Route>
-                        <Route path={"/ProfileUpdate"} element={ <ProfileUpdate />}></Route>
-                        <Route path={"/Search"} element={ <Search />}></Route>
-                        <Route path={"/Contact"} element={ <Contact />}></Route>
-                        <Route path={"/Error"} element={ <ErrorPage />}></Route>
-                    </Routes>
+                    <NavPage />
+                        <Routes>
+                            <Route path={"/"} element={ <HomePage />}></Route>
+                            <Route path={"/CreateListing"} element={ <CreateListing />}></Route>
+                            <Route path={"/Listings"} element={ <Homes />}></Route>
+                            <Route path={"/ListingPage"} element={ <ListingPage /> }></Route>
+                            <Route path={"/ListingUpdate"} element={ <ListingUpdate />}></Route>
+                            <Route path={"/CreateProfile"} element={ <CreateProfile />}></Route>
+                            <Route path={"/Profile"} element={ <ProfilePage />}></Route>
+                            <Route path={"/ProfileUpdate"} element={ <ProfileUpdate />}></Route>
+                            <Route path={"/Agents"} element={ <AgentsPages /> }></Route>
+                            <Route path={"/Search"} element={ <Search />}></Route>
+                            <Route path={"/Contact"} element={ <Contact />}></Route>
+                            <Route path={"/Error"} element={ <ErrorPage />}></Route>
+                            <Route path={"/Login"} element={ <Login />}></Route>
+                            <Route path={"/Register"} element={ <Register />}></Route>
+                            <Route path={"/PasswordEmail"} element={ <PasswordEmail />}></Route>
+                            <Route path={"/PasswordReset"} element={ <PasswordReset />}></Route>
+                            <Route path={"/ThankYou"} element={ <ThankYou />}></Route>
+                        </Routes>
+                    <Footer />
                 </Router>
-                <Footer />
-                {/* <div id="preloader"></div> */}
-                <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><FontAwesomeIcon icon={ faArrowUpShortWide } /></a>
             </div>
         )
     }
