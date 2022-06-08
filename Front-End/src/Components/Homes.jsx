@@ -28,10 +28,10 @@ class Homes extends React.Component
                             <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                <Link className="text-decoration-none text-white" to="#">Home</Link>
+                                <Link className="text-decoration-none text-dark" to="/">Home</Link>
                                 </li>
                                 <li className="breadcrumb-item active" aria-current="page">
-                                Properties Grid
+                                Properties
                                 </li>
                             </ol>
                             </nav>

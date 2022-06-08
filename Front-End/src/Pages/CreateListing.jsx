@@ -1,5 +1,5 @@
 import * as React from "react"
-const API_URL = "http://localhost:4000/Listings"
+const API_URL = "http://localhost:4000/Listings/Create"
 class CreateListing extends React.Component{
     constructor(props){
         super(props)

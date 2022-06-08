@@ -14,7 +14,13 @@ class Footer extends React.Component
                             <div className="col-sm-12 col-md-4">
                                 <div className="widget-a">
                                     <div className="w-header-a">
-                                        <h3 className="w-title-a text-brand"><Link className="text-decoration-none text-dark" to="/">Estate<span className="color-b">Agency</span></Link></h3>
+                                        <h3 className="w-title-a text-brand">
+                                            <Link className="text-decoration-none text-dark" to="/">
+                                                Espana
+                                                    <span className="color-b">CR7</span>
+                                                Agency
+                                            </Link>
+                                        </h3>
                                     </div>
                                     <div className="w-body-a">
                                         <p className="w-text-a color-text-a">
@@ -128,7 +134,14 @@ class Footer extends React.Component
                                 <div className="copyright-footer">
                                     <p className="copyright color-text-a">
                                         &copy; Copyright
-                                        <span className="color-a"><Link className="text-decoration-none text-dark m-1" to="/">Estate<span className="color-b">Agency</span></Link></span> All Rights Reserved.
+                                            <span className="color-a">
+                                                <Link className="text-decoration-none text-dark m-1" to="/">
+                                                    Espana
+                                                        <span className="color-b">CR7</span>
+                                                    Agency
+                                                </Link>
+                                            </span>
+                                         All Rights Reserved.
                                     </p>
                                 </div>
                             </div>

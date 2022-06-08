@@ -1,5 +1,5 @@
 import * as React from "react"
-let API_URL = "http://localhost:8080/api/user"
+let API_URL = "http://localhost:8000/User/Create"
 class CreateProfile extends React.Component{
     constructor(props){
         super(props)

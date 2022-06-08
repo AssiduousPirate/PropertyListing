@@ -21,12 +21,14 @@ import ListingPage from './Pages/ListingPage'
 import CreateProfile from './Pages/CreateProfile'
 import CreateListing from './Pages/CreateListing'
 import AgentsPages from './Pages/AgentsPages'
+import ScrollToTop from './Components/ScrollToTop'
 export default class App extends React.Component
 {
     render(){
         return(
             <div className="body">
                 <Router>
+                    <ScrollToTop>
                     <NavPage />
                         <Routes>
                             <Route path={"/"} element={ <HomePage />}></Route>
@@ -48,6 +50,7 @@ export default class App extends React.Component
                             <Route path={"/ThankYou"} element={ <ThankYou />}></Route>
                         </Routes>
                     <Footer />
+                    </ScrollToTop>
                 </Router>
             </div>
         )

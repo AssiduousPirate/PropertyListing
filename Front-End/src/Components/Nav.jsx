@@ -15,7 +15,7 @@ class NavPage extends React.Component
                             <span></span>
                             <span></span>
                         </button>
-                        <Link className="navbar-brand text-brand text-decoration-none text-dark" to={"/"}>Estate<span className="color-b">Agency</span></Link>
+                        <Link className="navbar-brand text-brand text-decoration-none text-dark" to={"/"}>Espana<span className="color-b">CR7</span>Agency</Link>
                         <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
