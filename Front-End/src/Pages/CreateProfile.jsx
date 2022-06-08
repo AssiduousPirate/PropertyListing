@@ -168,6 +168,9 @@ class CreateProfile extends React.Component{
     render(){
         return(
             <div className="p-5 m-5">
+            <div className="text-center">
+                <h1 className="text-lg">Create Your Profile</h1>
+            </div>
                 {this.state.message && (
                     <div className={this.state.successfully ?
                         "alert alert-success text-success text-center" :

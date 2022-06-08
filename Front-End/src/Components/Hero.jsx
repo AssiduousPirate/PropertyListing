@@ -1,20 +1,17 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import slider1 from "../Assets/img/slide-1.jpg"
-import slider2 from "../Assets/img/slide-2.jpg"
-import slider3 from "../Assets/img/slide-3.jpg"
+import backgroundImage1 from "../Assets/img/slide-1.jpg"
+import backgroundImage2 from "../Assets/img/slide-2.jpg"
+import backgroundImage3 from "../Assets/img/slide-3.jpg"
 class Hero extends React.Component
 {
     render()
     {
-        const myStyle1 = {
-            backgroundColor: slider2
-        }
         return(
             <div>
                 <div className="intro intro-carousel position-relative">
                     <div className="swiper-wrapper">
-                        <div className="swiper-slide carousel-item-a intro-item bg-image" style={ myStyle1 }>
+                        <div className="swiper-slide carousel-item-a bg-image intro-item" style={{ backgroundImage: `url(${backgroundImage1})` }}>
                             <div className="overlay overlay-a"></div>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
