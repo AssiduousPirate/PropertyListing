@@ -8,10 +8,10 @@ module.exports = function(app){
         )
         next()
     })
-    app.post("/api/auth/signup", [
+    app.post("http://localhost:8080/api/auth/signup", [
         verify.checkDuplecateUsernameOrEmail
     ],
     UserController.signup
     )
-    app.post("/api/auth/signin", UserController.signin)
+    app.post("http://localhost:8080/api/auth/signin", UserController.signin)
 }

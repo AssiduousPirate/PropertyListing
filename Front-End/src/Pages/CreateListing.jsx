@@ -190,8 +190,8 @@ class CreateListing extends React.Component{
     render(){
         return(
             <div className="p-5 m-5">
-            <div className="text-center">
-                <h1 className="text-lg">Create Your Listing</h1>
+            <div className="title-box-d">
+                <h3 className="title-d">Create Property</h3>
             </div>
             {this.state.message && (
                 <div className={this.state.successfully ?

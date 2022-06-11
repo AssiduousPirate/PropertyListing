@@ -1,6 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
 import "../Components/Auth.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEye } from "@fortawesome/free-solid-svg-icons"
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons"
 let API_URL = "http://localhost:8080/api/auth/signin"
 class Login extends React.Component
 {
@@ -20,6 +23,21 @@ class Login extends React.Component
         const value = event.target.value
         this.setState({
             [name]: value
+        })
+        const visible = document.querySelectorAll(".visible")
+        const unvisible = document.querySelectorAll(".unvisible")
+        const input = document.querySelector(".input")
+        unvisible.addEventListener("click", () => {
+            input.removeAttribute("type", "password")
+            input.setAttribute("type", "text")
+            visible.style.display = "block"
+            unvisible.style.display = "none"
+        })
+        visible.addEventListener("click", () => {
+            input.removeAttribute("type", "text")
+            input.setAttribute("type", "password")
+            visible.style.display = "none"
+            unvisible.style.display = "block"
         })
     }
     handleSubmit(event){
@@ -95,8 +113,12 @@ class Login extends React.Component
                             <form onSubmit={this.handleSubmit}>
                                 <input type="email" name="email" value={this.state.email} onChange={this.handleChange} className="form-control mb-4" placeholder="Email" />
                                 <div className="form">
-                                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} className="form-control mb-4" placeholder="Password" />
-                                    <Link to="/PasswordEmail">Forgot?</Link>
+                                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} className="form-control mb-4 input" placeholder="Password" />
+                                    <FontAwesomeIcon className="icons visible" onChange={this.handleChange} icon={ faEye } />
+                                    <FontAwesomeIcon className="icons unvisible" onChange={this.handleChange} icon={ faEyeSlash } />
+                                </div>
+                                <div className="m-3">
+                                    <Link className="text-decoration-none text-dark" to="/PasswordEmail">Forgot your password?</Link>
                                 </div>
                                 <div className="d-flex align-items-center justify-content-center">
                                     <button className="btn btn-danger btn-block continue">Continue</button>

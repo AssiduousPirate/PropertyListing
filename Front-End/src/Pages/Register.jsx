@@ -1,6 +1,9 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
 import "../Components/Auth.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEye } from "@fortawesome/free-solid-svg-icons"
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons"
 let API_URL = "http://localhost:8080/api/auth/signup"
 class Register extends React.Component
 {
@@ -22,6 +25,25 @@ class Register extends React.Component
         const value = event.target.value
         this.setState({
             [name]: value
+        })
+        const visible = document.querySelector(".visible")
+        const unvisible = document.querySelector(".unvisible")
+        const input = document.querySelector(".input")
+        unvisible.addEventListener("click", () => {
+            input.setAttribute("type", "text")
+            input.removeAttribute("type", "password")
+            visible.style.display = "block"
+            unvisible.style.display = "none"
+            // visible.classlist.remove("d-none")
+            // unvisible.classlist.add("d-none")
+        })
+        visible.addEventListener("click", () => {
+            input.removeAttribute("type", "text")
+            input.setAttribute("type", "password")
+            visible.style.display = "none"
+            unvisible.style.display = "block"
+            // visible.classlist.add("d-none")
+            // unvisible.classlist.remove("d-none")
         })
     }
     handleSubmit(event){
@@ -45,6 +67,14 @@ class Register extends React.Component
         if(this.state.password === " " && this.state.password === null){
             this.setState({
                 message: "Password is Required",
+                successfully: false
+            })
+            this.props.history.push("/Register")
+            window.location.reload()
+        }
+        if(this.state.password < 8){
+            this.setState({
+                message: "Password Must be more than 8 charector long",
                 successfully: false
             })
             this.props.history.push("/Register")
@@ -74,7 +104,7 @@ class Register extends React.Component
         }
         fetch(API_URL, requestOptions)
             .then((response) => {
-                console.log(response)
+                console.log(response.json())
                 return response.json()
             })
             .then((results) => {
@@ -120,8 +150,16 @@ class Register extends React.Component
                             <form onSubmit={this.handleSubmit}>
                                 <input type="text" name="name" value={this.state.name} onChange={this.handleChange} className="form-control mb-4" placeholder="Name" />
                                 <input type="email" name="email" value={this.state.email} onChange={this.handleChange} className="form-control mb-4" placeholder="Email" />
-                                <input type="password" name="password" value={this.state.password} onChange={this.handleChange} className="form-control mb-4" placeholder="Password" />
-                                <input type="password" name="repassword" value={this.state.repassword} onChange={this.handleChange} className="form-control mb-4" placeholder="RePassword" />
+                                <div className="form">
+                                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} className="form-control mb-4 input" placeholder="Password" />
+                                    <FontAwesomeIcon className="icons visible" onChange={this.handleChange} icon={ faEye } />
+                                    <FontAwesomeIcon className="icons unvisible" onChange={this.handleChange} icon={ faEyeSlash } />
+                                </div>
+                                <div className="form">
+                                    <input type="password" name="repassword" value={this.state.repassword} onChange={this.handleChange} className="form-control mb-4 input" placeholder="RePassword" />
+                                    <FontAwesomeIcon className="icons visible" onChange={this.handleChange} icon={ faEye } />
+                                    <FontAwesomeIcon className="icons unvisible" onChange={this.handleChange} icon={ faEyeSlash } />
+                                </div>
                                 <div className="d-flex align-items-center justify-content-center">
                                     <button className="btn btn-danger btn-block continue">Continue</button>
                                 </div>
