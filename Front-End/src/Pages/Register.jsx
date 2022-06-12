@@ -13,7 +13,7 @@ class Register extends React.Component
             name: "",
             email: "",
             password: "",
-            repassword: "",
+            //repassword: "",
             message: "",
             successfully: false
         }
@@ -34,16 +34,12 @@ class Register extends React.Component
             input.removeAttribute("type", "password")
             visible.style.display = "block"
             unvisible.style.display = "none"
-            // visible.classlist.remove("d-none")
-            // unvisible.classlist.add("d-none")
         })
         visible.addEventListener("click", () => {
             input.removeAttribute("type", "text")
             input.setAttribute("type", "password")
             visible.style.display = "none"
             unvisible.style.display = "block"
-            // visible.classlist.add("d-none")
-            // unvisible.classlist.remove("d-none")
         })
     }
     handleSubmit(event){
@@ -80,14 +76,14 @@ class Register extends React.Component
             this.props.history.push("/Register")
             window.location.reload()
         }
-        if(this.state.password !== this.state.repassword){
-            this.setState({
-                message: "Password doesn't matches",
-                successfully: false
-            })
-            this.props.history.push("/Register")
-            window.location.reload()
-        }
+        // if(this.state.password !== this.state.repassword){
+        //     this.setState({
+        //         message: "Password doesn't matches",
+        //         successfully: false
+        //     })
+        //     this.props.history.push("/Register")
+        //     window.location.reload()
+        // }
         let body = {
             name: this.state.name,
             email: this.state.email,
@@ -136,8 +132,8 @@ class Register extends React.Component
             <div className="auth">
                 <div className="container auth-controller d-flex justify-content-center align-items-center">
                     <div className="card">
-                        <div className="p-3 border-bottom d-flex align-items-center justify-content-center">
-                            <h5>Register</h5>
+                        <div className="title-box-d">
+                            <h3 className="title-d">Register</h3>
                         </div>
                         {this.state.message && (
                             <div className={this.state.successfully ?
@@ -155,11 +151,6 @@ class Register extends React.Component
                                     <FontAwesomeIcon className="icons visible" onChange={this.handleChange} icon={ faEye } />
                                     <FontAwesomeIcon className="icons unvisible" onChange={this.handleChange} icon={ faEyeSlash } />
                                 </div>
-                                <div className="form">
-                                    <input type="password" name="repassword" value={this.state.repassword} onChange={this.handleChange} className="form-control mb-4 input" placeholder="RePassword" />
-                                    <FontAwesomeIcon className="icons visible" onChange={this.handleChange} icon={ faEye } />
-                                    <FontAwesomeIcon className="icons unvisible" onChange={this.handleChange} icon={ faEyeSlash } />
-                                </div>
                                 <div className="d-flex align-items-center justify-content-center">
                                     <button className="btn btn-danger btn-block continue">Continue</button>
                                 </div>
@@ -171,8 +162,8 @@ class Register extends React.Component
                             </div>
                         </div>
                         <div className="p-3 d-flex flex-row justify-content-center align-items-center member">
-                            <span>Not a member? </span>
-                            <Link to="/Login" className="text-decoration-none ml-2">SIGNIN</Link>
+                            <span>Allready a member? </span>
+                            <Link to="/Login" className="text-decoration-none ml-2">Log in</Link>
                         </div>
                     </div>
                 </div>

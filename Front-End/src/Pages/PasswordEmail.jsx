@@ -70,8 +70,8 @@ class PasswordEmail extends React.Component
             <div className="auth">
                 <div className="container auth-controller d-flex justify-content-center align-items-center">
                     <div className="card">
-                        <div className="p-3 border-bottom d-flex align-items-center justify-content-center">
-                            <h5>Enter Your Email</h5>
+                        <div className="title-box-d">
+                            <h3 className="title-d">Enter your email</h3>
                         </div>
                         {this.state.message && (
                             <div className={this.state.successfully ?
