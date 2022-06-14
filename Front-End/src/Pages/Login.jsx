@@ -96,7 +96,7 @@ class Login extends React.Component
     render()
     {
         return(
-            <div className="auth mt-5 h-full">
+            <div className="auth mt-5">
                 <div className="container auth-controller d-flex justify-content-center align-items-center">
                     <div className="card mt-5">
                         <div className="text-center mt-3">
