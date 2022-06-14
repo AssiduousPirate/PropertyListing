@@ -96,16 +96,16 @@ class Login extends React.Component
     render()
     {
         return(
-            <div className="auth">
+            <div className="auth mt-5 h-full">
                 <div className="container auth-controller d-flex justify-content-center align-items-center">
-                    <div className="card">
-                        <div className="title-box-d">
-                            <h3 className="title-d">Login</h3>
+                    <div className="card mt-5">
+                        <div className="text-center mt-3">
+                            <h3>Login</h3>
                         </div>
                         {this.state.message && (
                             <div className={this.state.successfully ?
-                                "alert alert-success text-center" :
-                                "alert alert-danger text-center"} role="alert">
+                                "alert alert-success text-center mx-4" :
+                                "alert alert-danger text-center mx-4"} role="alert">
                                 {this.state.message}
                             </div>
                         )}
